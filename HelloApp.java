@@ -1,10 +1,12 @@
-public class HelloApp{
+public class HelloApp {
     public static void main(String[] args){
-        if (args.length>0){
-            String userName = args[0];
-            System.out.println("Hello " + userName);
+        String userName;
+        if (args.length > 0){
+            userName = args[0];
         }else{
-            System.out.println("Hello User!");
+            userName = "World";
         }
+        System.out.println("Hello " + userName + "!");
     }
-}  
+}
+
